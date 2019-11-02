@@ -1,0 +1,15 @@
+<resources>
+    <!--APP META-->
+    <string name="app_name">Gidme</string>
+
+    <!--Page-->
+    <string name="active_page"></string>
+
+    <!--Drawer Menu-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--TOP BAR-->
+    <string name="action_settings">Search</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

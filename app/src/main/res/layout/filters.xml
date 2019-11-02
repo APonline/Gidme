@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/subnavMenu">
+
+    <HorizontalScrollView
+        android:id="@+id/subnav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="0dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="none"
+        android:shadowColor="@color/colorPrimary"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/filters">
+
+            <Button
+                android:id="@+id/filter-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:padding="10dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Mall"
+                android:tag="1"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/filter-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="College Campus"
+                android:tag="2"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/filter-1"/>
+
+            <Button
+                android:id="@+id/filter-3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Airport"
+                android:tag="3"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/filter-2"/>
+
+            <Button
+                android:id="@+id/filter-4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Hospital"
+                android:tag="4"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/filter-3"/>
+
+            <Button
+                android:id="@+id/filter-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Trade Show"
+                android:tag="5"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/filter-4"/>
+
+            <Button
+                android:id="@+id/filter-6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Stadium"
+                android:tag="6"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/filter-5"/>
+
+            <Button
+                android:id="@+id/filter-7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goFilter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Entertainment"
+                android:tag="7"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/filter-6"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

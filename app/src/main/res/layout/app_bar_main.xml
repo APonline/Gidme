@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.gidme.gidme.MainActivity">
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"/>
+
+    <include
+        layout="@layout/levels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+    <include
+        layout="@layout/filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+
+    <!--MAP BUTTONS-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMyLocation"
+        android:onClick="centerMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/blue"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_constraintTop_toBottomOf="@+id/fabLocationMenu"
+        app:srcCompat="@drawable/ic_location_disabled_white_18dp"
+        tools:context="ca.gidme.gidme.WorldMap"
+        tools:ignore="OnClick" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/transparent"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/darkGray"
+            android:weightSum="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/venueBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:gravity="bottom"
+                    android:onClick="closeBack"
+                    android:padding="12dp"
+                    android:scaleType="centerCrop"
+                    android:shadowColor="@color/darkGray"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:src="@drawable/ic_prev"
+                    android:translationX="-15dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="249dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.44"
+                    android:gravity="center"
+                    android:text="@string/active_page"
+                    android:textColor="@color/darkGray"
+                    android:textSize="26sp"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toEndOf="@+id/venueBack" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--MAP BUTTONS END-->
+
+</android.support.design.widget.CoordinatorLayout>

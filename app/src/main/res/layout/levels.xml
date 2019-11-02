@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/subnavMenuLevel">
+
+    <HorizontalScrollView
+        android:id="@+id/subnav_levels"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="0dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="none"
+        android:shadowColor="@color/colorPrimary"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2">
+
+        <LinearLayout
+            android:id="@+id/levelFilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<Button
+                android:id="@+id/level_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="goLevel"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Main Floor"
+                android:tag="1"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"/>-->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

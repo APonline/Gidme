@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search">
+
+    <item
+        android:id="@+id/action_settings"
+        android:color="@color/lightGray"
+        android:orderInCategory="100"
+        android:tint="@android:color/darker_gray"
+        android:title="Search"
+        app:showAsAction="never" />
+</menu>

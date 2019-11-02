@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_venue"
+            android:textColor="@color/lightGray"
+            android:title="Venue:"
+            android:titleCondensed="Durham College - Oshawa" />
+        <item
+            android:id="@+id/nav_indoor_map"
+            android:textColor="@color/lightGray"
+            android:title="Indoor Map" />
+        <item
+            android:id="@+id/nav_venues"
+            android:textColor="@color/lightGray"
+            android:title="Venues" />
+        <!--<item
+            android:id="@+id/nav_notifications"
+            android:textColor="@color/lightGray"
+            android:title="Notifications" />-->
+        <item
+            android:id="@+id/nav_settings"
+            android:textColor="@color/lightGray"
+            android:title="Settings" />
+    </group>
+
+</menu>
